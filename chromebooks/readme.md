@@ -137,7 +137,3 @@ _Tip. for information about the restoration process post install one can have a 
 - [regular](./installation/basic-installation.md) - the simplest one, will copy over content of medium (so the medium can be already preconfigured), system installed on your device disk will **not** be fully encrypted
 - [encrypted](./installation/luks-installation.md) - your entire system will be encrypted, you will be forced to type password everytime you boot your device (not recommended for tablets since there is no on screen keyboard)
 - [dualboot](./installation/dualboot-instalation.md) - the system will be installed next to chromeos (in theory it can also be done agains any other linux distro or woa but why?). no encryption unless you fuse this guide with encrypted one.
-
-### legacy ways (not recommended)
-
-- [dd](./installation/dd-installation.md) - this method flashes the image directly onto chromebook memory, while it's somewhat simple/fast, it introduces issues the other installations don't
