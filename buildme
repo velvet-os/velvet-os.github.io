@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e #exit on error
+
 export old="$(pwd)"
 
 rm -rf build
