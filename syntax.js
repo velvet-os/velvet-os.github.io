@@ -4,13 +4,16 @@ function handleBash(block=""){
     for(var i = 0;i<data.length;i++){
         switch(data[i][0]){
             case "+":
-                out += "<green>"+data[i]+"</green>\n";
+                out += "<greenb>"+data[i]+"</greenb>\n";
                 break;
             case "-":
-                out += "<red>"+data[i]+"</red>\n";
+                out += "<redb>"+data[i]+"</redb>\n";
                 break;
             case "?":
-                out += "<yellow>"+data[i]+"</yellow>\n";
+                out += "<yellowb>"+data[i]+"</yellowb>\n";
+                break;
+            case "!":
+                out += "<orangeb>"+data[i]+"</orangeb>\n";
                 break;
             default:
                 out += data[i]+"\n";
