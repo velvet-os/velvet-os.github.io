@@ -127,7 +127,7 @@ header{
     font-weight: bolder;
 }
 header#l0{
-    text-align: center;
+    /* text-align: center; */
     font-size: 300%;
     font-weight: bolder;
 }
