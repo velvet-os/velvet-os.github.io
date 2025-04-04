@@ -33,15 +33,15 @@ Other
 
 ### Notes
 
-**Camera**
+*Camera*
 camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui))
 
-**Speaker**
+*Speaker*
 only 2 speakers (out of 4) work by default
 
 [additional package](https://github.com/hexdump0815/imagebuilder/discussions/240#discussioncomment-10732006) is required to fix the issue
 
-**Screen**
+*Screen*
 since the device has oled screen it's possible to make it extreamely dark
 by running
 ```

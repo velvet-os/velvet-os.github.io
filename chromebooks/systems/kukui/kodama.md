@@ -33,10 +33,10 @@ Other
 
 ### Notes
 
-**Camera**
+*Camera*
 camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui))
 
-**Audio**
+*Audio*
 Device after being put into suspense might emit high pitched noises
 this can be stopped by running
 ```systemctl --user restart pipewire-pulse.service```
@@ -45,7 +45,7 @@ or
 or
 rebooting your device
 
-**Gyroscope**
+*Gyroscope*
 the oriantation of by 90 degre
 it can be fixed by
 
@@ -57,7 +57,7 @@ sensor:modalias:*
 and then running
 ```sudo systemd-hwdb update && sudo udevadm trigger && sudo reboot```
 
-**Stylus** (flipped)
+*Stylus* (flipped)
 orientation can be fixed by putting
 ```
 ENV{DEVNAME}=="/dev/input/event6",ENV{LIBINPUT_CALIBRATION_MATRIX}="0 -1 1 1 0 0"
