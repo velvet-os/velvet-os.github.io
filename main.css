@@ -44,7 +44,7 @@ raw{
 }
 
 block{
-    margin: auto;
+    /* margin: auto; */
 
     text-align: left;
     white-space: pre-line;
@@ -70,7 +70,7 @@ img{
 }
 
 special{
-    margin: auto;
+    /* margin: auto; */
 
     white-space: pre-line;
     display: block;
