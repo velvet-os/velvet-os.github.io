@@ -1,7 +1,4 @@
 #!/bin/bash
-
-apt install cmake build-essential
-
 export old="$(pwd)"
 
 cd ..
