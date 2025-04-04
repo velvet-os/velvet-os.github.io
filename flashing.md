@@ -1,6 +1,6 @@
 # Preparing usb medium
 
-**Important. simply copying image onto an usb is not a correct way of doing it so please don't do it and then open issues about it not working**
+_Important. simply copying image onto an usb is not a correct way of doing it so please don't do it and then open issues about it not working_
 
 <details><summary>
 

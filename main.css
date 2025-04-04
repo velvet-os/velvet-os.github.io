@@ -1,0 +1,149 @@
+body{
+    margin: 5mm;
+    
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: rgb(32, 32, 32);
+}
+@media all and (orientation:landscape) {
+    body{padding-left: 25%;
+    padding-right: 25%;}
+ }
+ 
+ @media all and (orientation:portrait) {
+    body{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+ }
+block{
+    white-space: pre-line;
+    display: block;
+    padding: 2mm;
+    border-radius: 2mm;
+    width:fit-content;
+    min-width: 50%;
+
+    border-style: solid;
+    border-color: rgb(29, 29, 29);
+
+    transition: border-color 100ms;
+
+    background-color: rgb(63, 63, 63);
+}
+block:hover{
+    border-color: rgb(74, 74, 74);
+}
+raw{
+    color: white;
+    display: inline-block;
+    padding: 1mm;
+    background-color: rgb(59, 59, 59);
+    border-radius: 1mm;
+}
+
+block{
+    margin: auto;
+
+    text-align: left;
+    white-space: pre-line;
+    display: block;
+    padding: 2mm;
+    border-radius: 2mm;
+    width:fit-content;
+    min-width: 50%;
+
+    border-style: solid;
+    border-color: rgb(29, 29, 29);
+
+    transition: border-color 100ms;
+
+    background-color: rgb(63, 63, 63);
+}
+
+img{
+    border-radius: 3mm;
+    margin: auto;
+    display: block;
+    width:100%;
+}
+
+special{
+    margin: auto;
+
+    white-space: pre-line;
+    display: block;
+    padding: 2mm;
+    border-radius: 2mm;
+    width:fit-content;
+
+    border-style: solid;
+    border-color: rgb(29, 29, 29);
+
+    transition: border-color 100ms;
+
+    background-color: rgb(63, 63, 63);
+}
+special#Note{
+    color: black;
+    border-color: rgb(228, 255, 26);
+    background-color: rgb(161, 193, 0);
+}
+special#Info{
+    color: white;
+    border-color: rgb(0, 129, 184);
+    background-color: rgba(0, 101, 208, 0.614);
+}
+special#Tip{
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 184, 18);
+    background-color: rgba(26, 225, 0, 0.614);
+}
+special#Warning{
+    color: rgb(255, 251, 0);
+    border-color: rgb(184, 0, 0);
+    background-color: rgba(255, 50, 35, 0.614);
+}
+special#Important{
+    color: black;
+    border-color: rgb(184, 83, 0);
+    background-color: rgb(255, 149, 0);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 170, 255);
+}
+
+cur{
+    font-style: italic;
+}
+bold{
+    font-weight: bold;
+}
+header{
+    font-size: 300%;
+    font-weight: bolder;
+}
+header#l0{
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+}
+header#l1{
+    font-size: 250%;
+    font-weight: bolder;
+}
+header#l2{
+    font-size: 200%;
+    font-weight: bolder;
+}
+header#l3{
+    font-size: 150%;
+    font-weight: bolder;
+}
+header#h4{
+    font-size: 100%;
+    font-weight: bolder;
+}

@@ -15,7 +15,7 @@ A. [look here](./chromebooks/readme.md) (at the bottom), **make sure to read eve
 
 A. this is to be expected, you can [change it](./postinst/switch-de.md)
 
-**Q. is there [insert image not listed inside release] image**
+**Q. is there ${image_not_listed_inside_release} image**
 
 A. not really, unless it's available on earlier releases
 

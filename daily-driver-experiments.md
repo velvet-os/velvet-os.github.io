@@ -347,8 +347,8 @@ seems to sometimes hang after some time (i.e. getting very very slowly
 responding, no messages anywhere and everything else is working fine - found
 a few other reports about problems with this version currently as well) and
 the other bug seems to be related to the i915 drm and/or gpu driver which
-results in a black screen from time to time with the message "[drm] *ERROR*
-CPU pipe A FIFO underrun" - a suspend/resume cycle usually brought the display
+results in a black screen from time to time with the message ```[drm] *ERROR*
+CPU pipe A FIFO underrun``` - a suspend/resume cycle usually brought the display
 back reliably (found a few other reports about such problems as well)
 - update: a custom modprobe config is required to avoid a bug with baytrail
   and braswell based systems where their audio will switch to a beeping sound
