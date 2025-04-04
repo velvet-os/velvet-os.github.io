@@ -13,7 +13,7 @@ _**Remember.** the default username/password to login is: linux/changeme_
 - [Chromebooks](./chromebooks/readme.md)
 - [Consoles](./console/readme.md)
 
-- [Other devices](ttps://github.com/hexdump0815/imagebuilder/tree/main)
+- [Other devices](https://github.com/hexdump0815/imagebuilder/tree/main)
 
 _Tip. after booting there is an onscreen keyboard available via top menu on the login screen and the onboard onscreen keyboard is available in the xfce session (the four little squares in right part of the menubar)._
 
