@@ -34,10 +34,10 @@ Other
 
 ### Notes
 
-**Camera**
+*Camera*
 camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui))
 
-**Audio**
+*Audio*
 Device after being put into suspense might emit high pitched noises
 this can be stopped by running
 ```systemctl --user restart pipewire-pulse.service```
@@ -46,7 +46,7 @@ or
 or
 rebooting your device
 
-**Stylus**
+*Stylus*
 to get working requires
 writing ```/etc/libwacom/google-krane.tablet```:
 ```
@@ -66,7 +66,7 @@ Touch=false
 ```
 and running ```libwacom-update-db```
 
-**Touchpad**
+*Touchpad*
 has pressure issues
 to work properly requires
 writing ```/etc/libinput/local-overrides.quirks```

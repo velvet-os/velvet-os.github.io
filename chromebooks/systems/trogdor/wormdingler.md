@@ -33,10 +33,10 @@ Other
 
 ### Notes
 
-**Camera**
+*Camera*
 camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui))
 
-**Stylus**
+*Stylus*
 usi stylus on this device is rotated 90*
 
 putting a file like this
