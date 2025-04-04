@@ -5,8 +5,8 @@ apt install cmake build-essential
 export old="$(pwd)"
 
 cd ..
-git clone https://github.com/thenameisluk/mdplop
-cd mdplop
+git clone https://github.com/thenameisluk/mdplop mp #conflict with executable
+cd mp
 mkdir build
 cd build
 cmake ..
