@@ -3,7 +3,7 @@ name: experimental www deployment
 on:
   # Runs on pushes targeting the default branch
   push: #keeping it to www-experiment branch
-    branches: ["www-experiment"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
