@@ -18,7 +18,7 @@ body{
     }
  }
 block{
-    white-space: pre-line;
+    white-space: pre;
     display: block;
     padding: 2mm;
     border-radius: 2mm;

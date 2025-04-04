@@ -2,23 +2,33 @@
 
 ![kappa and juniper with velvet](https://github.com/hexdump0815/linux-mainline-on-arm-chromebooks/raw/main/images/kappa-and-juniper-with-velvet.jpg "kappa and juniper with velvet")
 
+running debian on arm64 chromebooks, consoles, tv boxes and other stuff
+
 _Remember. Login: linux / Password: changeme !!!_
 
-## [Getting started](./first-steps.md)
+### [Getting started](./first-steps.md)
 _how to boot and install stuff_
 
-## [News](./news.md)
+### [News](./news.md)
+what's new with the framework
 
-## [Important latest informations about the images](./important-information.md)
+### [Known Issue](./important-information.md)
 (please check them out!)
 
-## [FAQ](./faq.md)
+### [FAQ](./faq.md)
 _read before opening issues_
 
-## [Prebuilt images and general system info](https://github.com/hexdump0815/imagebuilder/tree/main)
+### [Images](https://github.com/hexdump0815/imagebuilder/tree/main)
+for specyfic devices
 
+### [Creating images](./using-the-imagebuilder-framework.md)
+if you want to
 
-## [Creating images](./using-the-imagebuilder-framework.md)
+### [Issue tracker](https://github.com/hexdump0815/imagebuilder/issues)
+for reporting issues
+
+### [Discussions](https://github.com/hexdump0815/imagebuilder/discussions)
+for other discussions
 
 # About the project
 

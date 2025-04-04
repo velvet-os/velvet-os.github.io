@@ -1,6 +1,8 @@
 #!/bin/bash
 export old="$(pwd)"
 
+rm -rf build
+
 cd ..
 git clone https://github.com/thenameisluk/mdplop mp #conflict with executable
 cd mp
