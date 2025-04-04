@@ -1,0 +1,20 @@
+#!/bin/bash
+
+apt install cmake build-essential
+
+export old="$(pwd)"
+
+cd ..
+git clone https://github.com/thenameisluk/mdplop
+cd mdplop
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+mv -v mdplop ../..
+cd ../..
+
+echo ./mdplop "$old" ./build
+./mdplop "$old" ./build
+
+mv ./build "$old"/build
