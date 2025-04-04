@@ -17,4 +17,4 @@ cd ../..
 echo ./mdplop "$old" ./build
 ./mdplop "$old" ./build
 
-mv ./build "$old"/build
+mv -v ./build "$old"/build
