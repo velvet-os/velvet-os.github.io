@@ -1,6 +1,6 @@
 ![homestar](./assets/krane.jpg)
 
-# Lenovo 10e (kodama)
+# Lenovo ideapad duet (krane)
 
 Kernel Version: 6.11.0-stb-mt8+
 
