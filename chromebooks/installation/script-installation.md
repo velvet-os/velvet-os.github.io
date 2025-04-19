@@ -77,6 +77,7 @@ which serves the exact seame purpose as ```vtinstall``` and is just fancy wrappe
 this installer is debian trixie/sid only (won't work on bookworm)
 
 ![vi](./assets/velvet-installer.png)
+
 _Note. it will look a bit diffrent on currecnt default desktop due to theming diffrence_
 
 https://github.com/thenameisluk/velvet-installer
