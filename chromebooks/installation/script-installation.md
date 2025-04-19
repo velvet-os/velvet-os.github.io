@@ -57,6 +57,7 @@ vtinstall
 sudo vtinstall <device>
 ```
 _Warning. make sure your device doesn't go into suspense, this might disrupt the installation_
+
 _Tip. replace <device> with device you want to install onto like sda or mmcblk0 or mmcblk1_
 
 the script should prompt you for confirmation
