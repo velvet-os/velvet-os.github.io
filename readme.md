@@ -47,5 +47,4 @@ For communication github discussions or github issues of this repo should be use
 Finally some notes about the name: the framework did not have any real name so far besides "imagebuilder", but as this is hard to find and not so easy to reference I have decided to give it some name, so it can be referenced easier than as "images built with the hexdump0815 imagebuilder framework" - lets call it "velvet os" from now on. The name comes from the fact, that I sometimes use self-adhesive velvet to cover the (sometimes heavily scratched) top of my chromebooks, which has the nice side effect to let all the marketing branding of the device disappear, making it a perfect velvet os device ...Let's hope that using velvet os images one day will be an as pleasant experience as touching velvet :)
 
 
-
-
+**<mdonly>documentation also available at https://velvet-os.github.io/</mdonly>**

@@ -17,6 +17,10 @@ body{
         padding-right: 3%;
     }
  }
+
+mdonly{
+    display: none;
+}
 block{
     white-space: pre;
     display: block;
