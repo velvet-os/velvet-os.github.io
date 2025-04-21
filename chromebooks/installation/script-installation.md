@@ -54,32 +54,32 @@ vtinstall
 
 2. run the following command to install
 ```
-sudo vtinstall <device>
+sudo vtinstall [device]
 ```
 _Warning. make sure your device doesn't go into suspense, this might disrupt the installation_
 
-_Tip. replace <device> with device you want to install onto like sda or mmcblk0 or mmcblk1_
+_Tip. replace [device] with device you want to install onto like sda or mmcblk0 or mmcblk1_
 
 the script should prompt you for confirmation
-and after that everything should just happend
+and after that everything should just happen
 
 after script finished just restart the device and everything should **just work**
 
-#### if you encouter any issue with the script
+#### if you encounter any issue with the script
 
 please report them [here](https://github.com/velvet-os/velvet-tools/issues)
 
 ## Graphical installation (experimental)
 
-there exist also *experimantel* graphicall wrapper around this command
+there exist also *experimental* graphical wrapper around this command
 
-which serves the exact seame purpose as ```vtinstall``` and is just fancy wrapper around it
+which serves the exact same purpose as ```vtinstall``` and is just fancy wrapper around it
 
 this installer is debian trixie/sid only (won't work on bookworm)
 
 ![vi](./assets/velvet-installer.png)
 
-_Note. it will look a bit diffrent on currecnt default desktop due to theming diffrence_
+_Note. it will look a bit different on current default desktop due to theming difference_
 
 https://github.com/thenameisluk/velvet-installer
 
@@ -92,7 +92,7 @@ once installed it should be available in applications menu
 
 _Warning. again make sure your device doesn't go into suspense during the installation, this might disrupt the installation_
 
-#### if you encouter any issue with the graphical installer
+#### if you encounter any issue with the graphical installer
 
 please report them [here](https://github.com/thenameisluk/velvet-installer/issues)
 
