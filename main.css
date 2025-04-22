@@ -167,3 +167,30 @@ orangeb{
     color: black;
     background-color: rgb(220, 143, 0);
 }
+
+
+botnote{
+    display: block;
+    border-radius: 2mm;
+    padding: 1mm;
+
+    font-size: 14px;
+    
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-style: solid;
+    border-color: rgb(29, 29, 29);
+
+    transition: border-color 100ms;
+
+    background-color: rgb(63, 63, 63);
+}
+botnote>p{
+    margin: 0;
+}
+botnote:hover{
+    border-color: rgb(74, 74, 74);
+}
