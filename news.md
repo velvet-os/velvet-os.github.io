@@ -1,5 +1,28 @@
 # status updates and news around this project
 
+## may 2025
+
+time for another little update of what was going on around velvet-os in the
+last months and what is planned for the next months:
+
+- velvet-os now has its own github organization: https://github.com/velvet-os
+  which will hopefully make collaborating around the project easier. so far the documentation has been moved out of the imagebuilder repo into the new velvet-os github organization and luk moved its velvet-os related repos into it as well already. the imagebuilder and imagebuilder-firmware repos will follow soon - this is just delayed by my still very limited time currently.
+- the velvet-os documentation is now rendered into its own web page at https://velvet-os.github.io/ to make it easier accessible and useable - a very big thanks goes to luk who completely took care of this topic.
+- the velvet-tools have been improved by various bug fixes and improvements and they are meanwhile also used for the kernel preparation and installation for creating and in the aarch64 chromebook images.
+- the new vtinstall command has been added to the velvet-tools to simplify the process of installing velvet-os to emmc on aarch64 chromebooks - again big thanks to luk for this.
+- for most of the supported systems there are now debian trixie test images out for people to try them and give feedback:
+  1. gru, oak, kukui, trogdor, corsola: https://github.com/hexdump0815/imagebuilder/discussions/302
+  2. snow, peach, nyan, veyron: https://github.com/hexdump0815/imagebuilder/discussions/303
+  3, allwinner h6/h616, amlogic gxl/gxm/g12a/g12b/sm1, rockchip rk33xx/rk356x, rpi4: https://github.com/hexdump0815/imagebuilder/discussions/308
+  4. starfive vf2 and bananapi f3 (riscv64): https://github.com/hexdump0815/imagebuilder/discussions/316
+  5. harpia and gt510 (msm8916): https://github.com/hexdump0815/imagebuilder/discussions/317
+  6. x86_64 images with mbr, regular 64bit efi and 32bit efi boot: https://github.com/hexdump0815/imagebuilder/discussions/318
+  7. odroid u and x, orbsmart s92 and beelink r89, amlogic s8xx, bpi m1 and allwinner h3: https://github.com/hexdump0815/imagebuilder/discussions/319
+  8. snapdragon sdm835 and sc7180/7c windows on arm devices (wip): https://github.com/hexdump0815/imagebuilder/discussions/320
+- imagebuilder: xz compression used by default for initramfs, larger kernel partitions for aarch64 chromebooks, debian trixie is the only recommended system for now - everything else is either deprecated (bookworm, jammy) or wip (noble), bug fixes and improvements across the framework and many of the system dirs
+- kukui chromebooks now have working external display support with some limitations around supported resolutions due to hardware limitations (chromeos on kukui has those limitations as well)
+- release planning: due to the fact that there are now debian trixie test images out for most systems for anyone interested in newer images and we did not get that much feedback yet for them there is the idea now to wait until debian trixie gets oficially released before building the next round of regular released velvet-os images
+
 ## january 2025
 
 it might look like there is not that much happening around velvet os, but there
