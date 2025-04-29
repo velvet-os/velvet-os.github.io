@@ -51,7 +51,7 @@ _Note. the internal memory is often (but not always) ```mmcblk1``` or ```mmcblk0
 
 2. Export the target disk
 
-if you want to install onto ```mmcblk0``` or ```mmcblk1``` (number is diffent on diffrent chromebooks)
+if you want to install onto ```mmcblk0``` or ```mmcblk1``` (number is different on different chromebooks)
 ```
 export disk=mmcblk0
 export part=mmcblk0p
