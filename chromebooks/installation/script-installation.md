@@ -7,7 +7,7 @@ in this approach we do not dump the image file onto the emmc but instead simply 
 - simpler than regular installation
 - **only arm64 chromebooks supported**
 
-_Note. **before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md)_
+_Warning. if you don't want you system becoming unbootable in the future, **before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md) (you can't do this after the installation)_
 
 _Remember. these steps have to be done from [linux booted from usb](../readme.md), not chromeos_
 

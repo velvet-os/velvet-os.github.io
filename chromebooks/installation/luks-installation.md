@@ -1,8 +1,8 @@
 # The Encrypted installation
 
-_**Warning.** this guide is arm64 chromebooks only_
+_Note. this guide is arm64 chromebooks only_
 
-**before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md) (especially if you install it directly onto chromebook memory)
+_Warning. if you don't want you system becoming unbootable in the future, **before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md) (you can't do this after the installation)_
 
 # Let's just do it
 

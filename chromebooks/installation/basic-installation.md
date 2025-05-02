@@ -5,7 +5,7 @@ in this approach we do not dump the image file onto the emmc but instead simply 
 - ability to preconfigure - the running image can already be a bit preconfigured and all changes to it will also be synced to emmc (maybe useful when installing on multiple identical systems)
 - no uuid conflict - the filesystems on the emmc will get new filesystem uuids and also the labels of the filesystems can be easily adjusted, so no risk of a conflict with a booted rescue system from sd card/usb
 
-_Note. **before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md)_
+_Warning. if you don't want you system becoming unbootable in the future, **before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md) (you can't do this after the installation)_
 
 _Remember. these steps have to be done from [linux booted from usb](../readme.md), not chromeos_
 
