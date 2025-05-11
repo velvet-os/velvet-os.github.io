@@ -1,0 +1,16 @@
+name: mdplop tolerancy test
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+#regular build process
+      - name: build
+        run: ./buildme
+#without deployment
