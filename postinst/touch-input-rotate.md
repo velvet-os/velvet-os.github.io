@@ -13,7 +13,8 @@ In this case, you will have to install the [Screen Orientation Manager](https://
 This method works in all DEs I have tested (GNOME/KDE/Cinnamon/XFCE/MATE/LXDE) and should work everywhere. Written in Python, it works on both ARM and x86_64 computers.
 
 
-First, add the [Velvet OS repo](https://gitlab.com/velvet-os/velvet-repo#adding-repo) (newer images already come with the repo configured)
+First, add the [Velvet OS repo](https://gitlab.com/velvet-os/velvet-repo#adding-repo)
+_Note. newer images already come with the repo configured_
 
 ```
 #add public key
