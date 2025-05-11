@@ -4,7 +4,7 @@
 
 ### scrolling issue
 
-## on wayland
+#### on wayland
 
 firefox on xwayland (or x11) dosen't let you scroll with touch screen
 like on mobile devices to mitigate this you should install a
