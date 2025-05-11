@@ -23,7 +23,7 @@ navigating device with touch screen
 
 </details>
 
-## on X11
+#### on X11
 
 If you are using X.Org (e.g. MATE/XFCE), then 
 
