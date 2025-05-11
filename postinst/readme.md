@@ -34,6 +34,8 @@ now that you are done with installation there are some additional things you wan
 
 - stylus rotation adjustment - [stylus input on my device is rotated](./troubleshooting/stylus-rotation.md)
 
+- touchscreen rotation adjustment (X.Org) - [touchscreen input does not rotate](./touch-input-rotate.md)
+
 ### other
 
 - chromebooks - [solutions to device specific issues can be found here](../chromebooks/systems/readme.md)
