@@ -34,9 +34,10 @@ Other
 
 ### Notes
 
-Gyroscope does not work on Debian Trixie due to a bug in `iio-sensor-proxy`. You can install the .deb package 
+- Gyroscope does not work on Debian Trixie due to a bug in `iio-sensor-proxy`. You can install the .deb package 
 of the patched version from [here](https://github.com/velvet-os/imagebuilder/issues/329#issuecomment-2986024606), 
 and the gyroscape should work afterward.
+- In XFCE, you'll have to enable the Chromebook keyboard layout for function keys to work.
   
 # Other
 
