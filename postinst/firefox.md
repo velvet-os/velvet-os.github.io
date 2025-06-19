@@ -4,7 +4,9 @@
 
 ### scrolling issue
 
-firefox on x11/xwayland dosen't let you scroll with touch screen
+#### on wayland
+
+firefox on xwayland (or x11) dosen't let you scroll with touch screen
 like on mobile devices to mitigate this you should install a
 wayland compositor like [gnome](./switch-de.md)
 
@@ -20,6 +22,18 @@ so now as long as you use wayland de you should have no issue with
 navigating device with touch screen
 
 </details>
+
+#### on X11
+
+If you are using X.Org (e.g. MATE/XFCE), then 
+
+1. open `about:config` in firefox to set `dom.w3c_touch_events.enabled=1` (default is 2).
+
+2. edit `/etc/security/pam_env.conf` and add `MOZ_USE_XINPUT2 DEFAULT=1`
+
+3. reboot and restart firefox
+
+Source: https://askubuntu.com/a/994483/124466
 
 ### on screen keyboard issue
 
