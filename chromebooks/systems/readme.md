@@ -10,6 +10,7 @@
 #### [gru (Rockchip RK3399)](https://github.com/hexdump0815/imagebuilder/blob/main/systems/chromebook_gru/readme.md)
 #### [oak (MediaTek MT8173C)](https://github.com/hexdump0815/imagebuilder/blob/main/systems/chromebook_oak/readme.md)
 [Lenovo 100e (hana)](./oak/hana-100e-gen2.md)
+[Lenovo 300e 2nd gen (Mediatek) (hana)](./oak/hana-300e-gen2-mtk.md)
 #### [kukui (MediaTek MT8183)](https://github.com/hexdump0815/imagebuilder/blob/main/systems/chromebook_kukui/readme.md)
 [Lenovo ideapad duet (krane)](./kukui/krane.md)
 [Lenovo 10e (kodama)](./kukui/kodama.md)
