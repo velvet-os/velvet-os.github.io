@@ -26,7 +26,7 @@ make all
 
 If the build succeeds, it should create the binary file `out/evdev-rce`. To test it, run it with sudo,
 ```
-$ sudo evdev-right-click-emulation/out/evdev-rce 
+sudo evdev-right-click-emulation/out/evdev-rce 
 ```
 which should produce an output like
 ```
