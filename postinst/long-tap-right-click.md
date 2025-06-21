@@ -59,3 +59,4 @@ sudo cp evdev-right-click-emulation/out/evdev-rce /usr/local/bin/
 sudo systemctl daemon-reload
 sudo systemctl enable long-tap-right-click.service
 sudo systemctl start long-tap-right-click.service'
+```
