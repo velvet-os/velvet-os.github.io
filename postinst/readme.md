@@ -36,7 +36,7 @@ now that you are done with installation there are some additional things you wan
 
 - touchscreen rotation adjustment (X.Org) - [touchscreen input does not rotate](./touch-input-rotate.md)
 
-- Right clicking with touchscreen in XFCE - [cannot use right click on touchscreen devices](./long-tap-right-click.md)
+- Right clicking with touchscreen - [cannot use right click on touchscreen devices](./long-tap-right-click.md)
 
 ### other
 
