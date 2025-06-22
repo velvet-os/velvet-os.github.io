@@ -1,6 +1,9 @@
-If your desktop environment does not support long-tap-to-right click (e.g. XFCE) with touchscreen, here is how you can enable it.
+## Using touchscreen to right click
 
-You can do this with https://github.com/PeterCxy/evdev-right-click-emulation/
+Some desktop environments (DE) like XFCE do not support this feature out of the box.
+This tutorial works in both X11 and Wayland based setups, and is DE agnostic.
+
+This can be achieved with https://github.com/PeterCxy/evdev-right-click-emulation/
 
 First, install the build dependencies
 ```
