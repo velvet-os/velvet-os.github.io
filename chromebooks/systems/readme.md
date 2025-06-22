@@ -23,6 +23,6 @@
 [Lenovo ideapad duet 5 (homestar)](./trogdor/homestar.md)
 [Acer chromebook spin sp513 (lazor)](./trogdor/lazor.md)
 
-*Note. if your device isn't present here it doesn't mean it's not working but noone who owns the device added the docs yet, you 🫵 can always [add it yourself](../../adding-device.md)*
+*Note. if your device isn't present here it doesn't mean it's not working but no one who owns the device added the docs yet, you 🫵 can always [add it yourself](../../adding-device.md)*
 
-*Note. camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui))*
+*Note. camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui)#Camera)*
