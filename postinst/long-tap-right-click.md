@@ -14,7 +14,7 @@ Then, download the source
 git clone https://github.com/PeterCxy/evdev-right-click-emulation.git
 ```
 
-Now, `go to evdev-right-click-emulation`, and change the line 19 of Makefile to the following (otherwise, it will fail to compile in recent versions of Ubuntu)
+Now, go to `evdev-right-click-emulation` directory, and change the line 19 of Makefile to the following (otherwise, it will fail to compile in recent versions of Ubuntu/Debian)
 ```
  	$(CC) $^ -o $@ $(CFLAGS)
 ```
