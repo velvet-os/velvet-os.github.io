@@ -1,4 +1,4 @@
-If your DE does not support long-tap-to-right click (e.g. XFCE) with your touchscreen, here is how you can enable it.
+If your desktop environment does not support long-tap-to-right click (e.g. XFCE) with touchscreen, here is how you can enable it.
 
 You can do this with https://github.com/PeterCxy/evdev-right-click-emulation/
 
