@@ -25,4 +25,4 @@
 
 *Note. if your device isn't present here it doesn't mean it's not working but noone who owns the device added the docs yet, you 🫵 can always [add it yourself](../../adding-device.md)*
 
-*Note. camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui))*
+*Note. camera doesn't work across all [no laptop devices](https://wiki.postmarketos.org/wiki/Google_Kukui_Chromebook_(google-kukui)#Camera)
