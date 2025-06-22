@@ -1,5 +1,4 @@
-The default XFCE session does not play very well with touchscreens. Of course, you can switch to GNOME and KDE which use wayland and there you can long tap to emulate right click, but many devices are not powerful enough (or lack GPU driver) to run GNOME or KDE.
-Here we describe how to emulate right click behavior in XFCE by a long tap.
+If your DE does not support long-tap-to-right click (e.g. XFCE) with your touchscreen, here is how you can enable it.
 
 You can do this with https://github.com/PeterCxy/evdev-right-click-emulation/
 
@@ -34,8 +33,6 @@ Found touch screen at /dev/input/event3: Elan Touchpad
 Found touch screen at /dev/input/event2: hid-over-i2c 06CB:7817
 ```
 Afterward, long tap to enable right click should work!
-
----
 
 Run the following command (copy paste the multi-line command into the terminal and press enter) to enable this feature permanently, once and for all! 
 (it creates a systemd service so that the program would run as root at startup)
