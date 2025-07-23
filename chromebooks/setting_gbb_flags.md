@@ -211,7 +211,7 @@ which combines
 </details>
 
 5. set the desired gbb flags via the command ```/usr/share/vboot/bin/set_gbb_flags.sh 0x19```,
-on newer chromeos versions (around 112+ or so) one should use ```futility gbb --set --flash --flags=0x19``` instead
+on newer chromeos versions (around 112+ or so) one should use ```futility gbb --set --flash --flags=0x19``` or ```futility gbb --set --flags=0x19 --flash``` instead
 
 6. check current flags via the command ```/usr/share/vboot/bin/get_gbb_flags.sh``` (newer version: ```futility gbb --get --flash --flags```)
 
