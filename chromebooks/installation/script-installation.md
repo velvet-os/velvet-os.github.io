@@ -6,8 +6,11 @@ in this approach we do not dump the image file onto the emmc but instead simply 
 - no uuid conflict - the filesystems on the emmc will get new filesystem uuids and also the labels of the filesystems can be easily adjusted, so no risk of a conflict with a booted rescue system from sd card/usb
 - simpler than regular installation
 - **only arm64 chromebooks supported**
+- This script is **for debian testing/trixie images** and above (won't work propertly on bookworm or buster)
 
-_Warning. if you don't want you system becoming unbootable in the future, **before proceeding** with installation it is recommended to first [set gbb flags](../setting_gbb_flags.md) (you can't do this after the installation)_
+### Important
+
+_Warning. if you don't want you system becoming unbootable in the future, **before proceeding** with installation it is recommended to **first [set gbb flags](../setting_gbb_flags.md)** (you can't do this after the installation)_
 
 _Remember. these steps have to be done from [linux booted from usb](../readme.md), not chromeos_
 
@@ -15,12 +18,7 @@ _Remember. these steps have to be done from [linux booted from usb](../readme.md
 
 as of version 0.7.7 [velvet tools](https://github.com/velvet-os/velvet-tools) include ```vtinstall``` command
 
-before proceeding with the installation make sure you have version 0.7.7 or higher with the following command
-```
-dpkg -l velvet-tools
-```
-
-#### if you have an ealier version run
+before proceeding with the installation **make sure** you have the **latest version** with the following command
 ```
 sudo apt update
 sudo apt full-upgrade
@@ -69,13 +67,11 @@ after script finished just restart the device and everything should **just work*
 
 please report them [here](https://github.com/velvet-os/velvet-tools/issues)
 
-## Graphical installation (experimental)
+## Graphical installation (proof-of-concept)
 
-there exist also *experimental* graphical wrapper around this command
+there exist also *poc* graphical wrapper around this command
 
 which serves the exact same purpose as ```vtinstall``` and is just fancy wrapper around it
-
-this installer is debian trixie/sid only (won't work on bookworm)
 
 ![vi](./assets/velvet-installer.png)
 
