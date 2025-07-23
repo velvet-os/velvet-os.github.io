@@ -33,7 +33,7 @@ run it can be freely chosen, but for now its best to clone this repo to
 /compile/local/imagebuilder as a first step (in case the btrfs filesystem is
 used, please have a look at the next section beforehand):
 ```
-git clone https://github.com/hexdump0815/imagebuilder /compile/local/imagebuilder
+git clone https://github.com/velvet-os/imagebuilder /compile/local/imagebuilder
 cd /compile/local/imagebuilder
 ```
 
