@@ -6,7 +6,7 @@ as we know chromebooks have special keyboard with some keys missing or being dif
 i thought i might go over a process of modifying the keyboard to make it function "properly" (it's up to preference)
 
 # Universal solution
-the easiest way to modify specyfic key on a keyboard is using [keyd](https://github.com/rvaiya/keyd)
+the easiest way to modify specific key on a keyboard is using [keyd](https://github.com/rvaiya/keyd)
 
 we can install it on our system with following commands
 ```

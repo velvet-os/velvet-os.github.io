@@ -18,7 +18,7 @@ or similar
 ## Flashing on Chromebook or Linux
 download the image
 
-using your browser, you can find image for ur specyfic device [here]()
+using your browser, you can find image for your specific device [here]()
 
 find the name.img.gz (it can be skipped if you already know file location)
 ```

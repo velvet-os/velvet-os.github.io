@@ -19,7 +19,7 @@ you should have succesfully booted into the operating system 🎉
 
 good job ❤️
 
-Now you might be interested in checking out [device specyfic pages](./systems/readme.md)
+Now you might be interested in checking out [device specific pages](./systems/readme.md)
 
 there are [some commands you might want to run](../first-boot.md)
 

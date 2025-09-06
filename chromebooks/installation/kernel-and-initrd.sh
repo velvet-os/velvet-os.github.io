@@ -73,7 +73,7 @@ dd if=/dev/zero of=bootloader.bin bs=512 count=1
 # - mt8: dtb-${kver}/mt8183-*.dtb
 # - cbq: dtb-${kver}/sc7180-trogdor-*.dtb
 # - generic: dtb-${kver}/*.dtb
-#Note. you can specufy only dtb for your specyfic device to reduce space
+#Note. you can specify only dtb for your specific device to reduce space
 #even further but lose portability. PLS BE CAREFUL, if you select wrong
 #one the device will likely no work
 

@@ -112,7 +112,7 @@ fdisk /dev/${disk}
 cfdisk /dev/${disk}
 ![cfdisk](./assets/luks/cfdisk.png)
 
-_Note. you don't need to format them or select specyfic type, just make them correct size we will format them later_
+_Note. you don't need to format them or select specific type, just make them correct size we will format them later_
 
 _Warning. this images are for software look showcase and to make it easier for you to chose the most comfortable one for you <3, partition your device the way described in the guide, not the way presented on the images_
 
@@ -359,7 +359,7 @@ dd if=/dev/zero of=bootloader.bin bs=512 count=1
 # - mt8: dtb-${kver}/mt8183-*.dtb
 # - cbq: dtb-${kver}/sc7180-trogdor-*.dtb
 # - generic: dtb-${kver}/*.dtb
-#Note. you can specufy only dtb for your specyfic device to reduce space
+#Note. you can specify only dtb for your specific device to reduce space
 #even further but lose portability. PLS BE CAREFUL, if you select wrong
 #one the device will likely no work
 
