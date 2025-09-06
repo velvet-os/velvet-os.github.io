@@ -19,7 +19,7 @@ what's new with the framework
 _read before opening issues_
 
 ### [Images](https://github.com/hexdump0815/imagebuilder/tree/main)
-for specyfic devices
+for specific devices
 
 ### [Creating images](./using-the-imagebuilder-framework.md)
 if you want to
