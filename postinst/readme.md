@@ -12,6 +12,8 @@ now that you are done with installation there are some additional things you wan
 
 - Switching desktop environment - [i want my desktop to look diffrent](./switch-de.md)
 
+- Change boot screen (plymouth theme) - [I want to change the default boot screen with Debian logo](./plymouth-theme.md)
+
 ### Additional software/packages
 
 - Install waydroid - i want to play and use android apps (to be done)
