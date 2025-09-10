@@ -6,7 +6,7 @@ now that you are done with installation there are some additional things you wan
 
 ### System setup
 
-- Change username/hostname - [neither "linux" nor "changeme" doesn't suite my vibe](./change-names.md)
+- Change username/hostname - [neither "linux" nor "changeme" will suite my vibe](./change-names.md)
 
 - Modifying keyboards keys - [modify specific special key to your needs](./modifying-keyboard.md)
 
