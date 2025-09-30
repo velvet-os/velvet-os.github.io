@@ -58,3 +58,27 @@ maybe with panfrost enabled it works better if firefox gets forced to opengl
 mode via layers.acceleration.force-enabled = true in about:config
 
 see also: https://oftc.irclog.whitequark.org/panfrost/2022-08-27#31297793
+
+## Disable AI features
+
+Recent versions of firefox (140+) come with a lot of AI/ML features that you most likely don't
+need but they slow down the performance in already underperforming chromebooks.
+To disable all AI features,
+
+1. Type `about:config` in the address bar of Firefox and hit Enter.
+2. Click "Accept the risk and continue"
+3. Search for each of the following options and change them all to "false":
+
+   - `browser.ml.enable`
+   - `browser.ml.chat.enabled`
+   - `browser.ml.chat.page`
+   - `browser.ml.linkPreview.enabled`
+   - `browser.tabs.groups.smart.enabled`
+   - `browser.tabs.groups.smart.userEnabled`
+   - `extensions.ml.enabled`
+   - `sidebar.notification.badge.aichat`
+
+This *should* disable the embedded AI features. Note that some of these are not enabled by default (i.e., not set to be Tru) - which is fine, meaning they aren't enabled.
+
+Source: https://askubuntu.com/q/1556081/124466
+
