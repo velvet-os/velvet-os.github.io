@@ -21,6 +21,17 @@ _Note. you can also install ```task-gnome-desktop``` instead if you want to inst
 
 _Note. during the installation you might be asked to pick display manager, default for gnome is ```gdm```, picking other option will result in gnome lock screen not working_
 
+### Troubleshooting
+
+**If you find your gnome crashing after touching touchpad**
+
+try running
+```
+dconf reset -f /
+```
+this command will reset all your dconf settings (wallpaper,shortcuts,accent color,etc.) and should fix the issue
+
+
 ## Twin
 
 lightweight with retro vibe
