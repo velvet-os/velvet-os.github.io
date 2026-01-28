@@ -16,18 +16,18 @@
 - Nvidia:
   - Tegra K1 32-bit "Nyan": https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_nyan/readme.md
 - Rockchip:
-  - rk3288 32bit chromebooks veyron: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_veyron/readme.md
-  - rk3399 64bit chromebooks gru: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_gru/readme.md
-- MediaTek (Mt81xx):
-  - mt8173 64bit chromebooks oak: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_oak/readme.md
-  - mt8183 64bit chromebooks kukui: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_kukui/readme.md
-  - mt8186 64bit chromebooks corsola: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_corsola/readme.md (wip)
-  - mt8188 64bit chromebooks geralt: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_geralt/readme.md (wip)
-  - mt8192 64bit chromebooks asurada: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_asurada/readme.md (wip)
-  - mt8195 64bit chromebooks cherry: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_cherry/readme.md (wip)
-  - mt8196 64bit chromebooks rauru: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_rauru/readme.md (wip)
+  - rk3288 32-bit "Veyron": https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_veyron/readme.md
+  - rk3399 64-bit "Gru": https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_gru/readme.md
+- MediaTek (Mt81xx 64-bit):
+  - mt8173(C) "Oak": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_oak/readme.md)
+  - mt8183 "Kukui": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_kukui/readme.md)
+  - mt8186 "Corsola": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_corsola/readme.md) (wip)
+  - mt8188 "Geralt": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_geralt/readme.md) (wip)
+  - mt8192 "Asurada": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_asurada/readme.md) (wip)
+  - mt8195 "Cherry": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_cherry/readme.md) (wip)
+  - mt8196 "Rauru": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_rauru/readme.md) (wip)
 - Qualcomm:
-  - 7c gen1 and gen2 sc7180 64bit chromebooks trogdor: https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_trogdor/readme.md
+  - 7c gen1 & gen2 sc7180 64-bit "Trogdor": [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/chromebook_trogdor/readme.md)
 
 ## Intel(x86)/Generic systems:
 
