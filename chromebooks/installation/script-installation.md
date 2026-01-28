@@ -1,11 +1,12 @@
 # The installation script
 
-in this approach we do not dump the image file onto the emmc but instead simply sync the contents of the running system onto newly created filesystems on the emmc. the advantages over legacy dd installation are:
-- internet not required - no network connection required and the running system has everything required
-- ability to preconfigure - the running image can already be a bit preconfigured and all changes to it will also be synced to emmc (maybe useful when installing on multiple identical systems)
-- no uuid conflict - the filesystems on the emmc will get new filesystem uuids and also the labels of the filesystems can be easily adjusted, so no risk of a conflict with a booted rescue system from sd card/usb
-- simpler than regular installation
-- **only arm64 chromebooks supported**
+In this approach we do not dump the image file onto the emmc but instead simply sync the contents of the running system onto newly created filesystems on the emmc. the advantages over legacy dd installation are:
+
+- Internet not required - no network connection required and the running system has everything required.
+- Ability to preconfigure - the running image can already be a bit preconfigured and all changes to it will also be synced to emmc (maybe useful when installing on multiple identical systems)
+- No uuid conflict - the filesystems on the emmc will get new filesystem uuids and also the labels of the filesystems can be easily adjusted, so no risk of a conflict with a booted rescue system from sd card/usb
+- Simpler than regular installation
+- **Only arm64 chromebooks supported**
 - This script is **for debian testing/trixie images** and above (won't work propertly on bookworm or buster)
 
 ### Important
@@ -16,21 +17,22 @@ _Remember. these steps have to be done from [linux booted from usb](../readme.md
 
 ## Introduction
 
-as of version 0.7.7 [velvet tools](https://github.com/velvet-os/velvet-tools) include ```vtinstall``` command
+As of version 0.7.7 [velvet tools](https://github.com/velvet-os/velvet-tools) includes the ```vtinstall``` command
 
-before proceeding with the installation **make sure** you have the **latest version** with the following command
+Before proceeding with the installation **make sure** you have the **latest version** with the following command:
+
 ```
 sudo apt update
 sudo apt full-upgrade
 ```
 
-#### if your system doesn't come with velvet tools installed
+#### If your system doesn't come with velvet tools installed:
 
-you can get .deb version from https://github.com/velvet-os/velvet-tools/releases
+You can get .deb version from https://github.com/velvet-os/velvet-tools/releases
 
 or
 
-install them via [velvet-repo](https://gitlab.com/velvet-os/velvet-repo)
+Install them via [velvet-repo](https://gitlab.com/velvet-os/velvet-repo)
 
 ```
 #add public key
@@ -45,51 +47,55 @@ sudo apt install velvet-tools
 
 ## Installation process
 
-1. start by listing all possible installation devices
+1. Start by listing all possible installation devices
+
 ```
 vtinstall
 ```
 
-2. run the following command to install
+2. Run the following command to install
+
 ```
 sudo vtinstall [device]
 ```
-_Warning. make sure your device doesn't go into suspense, this might disrupt the installation_
 
-_Tip. replace [device] with device you want to install onto like sda or mmcblk0 or mmcblk1_
+_Warning. make sure your device doesn't go into suspend mode, this might disrupt the installation._
 
-the script should prompt you for confirmation
-and after that everything should just happen
+_Tip. Replace [device] with device you want to install onto like sda or mmcblk0 or mmcblk1_
 
-after script finished just restart the device and everything should **just work**
+The script should prompt you for confirmation
+and after that everything should just happen.
 
-#### if you encounter any issue with the script
+After the script has finished just restart the device and everything should **just work**.
 
-please report them [here](https://github.com/velvet-os/velvet-tools/issues)
+#### If you encounter any issue with the script
+
+Please report them [here](https://github.com/velvet-os/velvet-tools/issues)
 
 ## Graphical installation (proof-of-concept)
 
-there exist also *poc* graphical wrapper around this command
+There exists a *poc* graphical wrapper around this command,
 
-which serves the exact same purpose as ```vtinstall``` and is just fancy wrapper around it
+which serves the exact same purpose as ```vtinstall``` and is just a fancy wrapper around it.
 
 ![vi](./assets/velvet-installer.png)
 
-_Note. it will look a bit different on current default desktop due to theming difference_
+_Note. it will look a bit different on the current default desktop due to theming difference._
 
 https://github.com/thenameisluk/velvet-installer
 
-you can install it via velvet repo (look above on adding velvet repo)
+You can install it via velvet repo (look above on adding velvet repo).
+
 ```
 sudo apt install velvet-installer
 ```
 
-once installed it should be available in applications menu
+Once installed, it should be available in applications menu.
 
-_Warning. again make sure your device doesn't go into suspense during the installation, this might disrupt the installation_
+_Warning. Again make sure your device doesn't go into suspense during the installation, this might disrupt the installation._
 
-#### if you encounter any issue with the graphical installer
+#### If you encounter any issue with the graphical installer
 
-please report them [here](https://github.com/thenameisluk/velvet-installer/issues)
+Please report them [here](https://github.com/thenameisluk/velvet-installer/issues)
 
-keep in mind this is just a Proof-of-Concept
+Keep in mind this is just a Proof-of-Concept
