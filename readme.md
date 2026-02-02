@@ -7,28 +7,40 @@ Running Debian on arm64 chromebooks, consoles, tv boxes and other stuff.
 _Remember. Login: linux / Password: changeme !!!_
 
 ### [Getting started](./first-steps.md)
+
 _How to boot and install stuff._
 
 ### [News](./news.md)
+
 What's new with the framework.
 
 ### [Known Issues](./important-information.md)
+
 (Please check them out!)
 
 ### [FAQ](./faq.md)
+
 _Read before opening issues._
 
 ### [Images](./images-master.md)
+
 For specific devices.
 
 ### [Creating images](./using-the-imagebuilder-framework.md)
+
 If you want to, usually updating the kernel, attempting a port.
 
 ### [Issue tracker](https://github.com/hexdump0815/imagebuilder/issues)
+
 For reporting issues.
 
 ### [Discussions](https://github.com/hexdump0815/imagebuilder/discussions)
+
 For other discussions.
+
+### [Systems](./systems.md)
+
+See what systems have been tested so far.
 
 # About the project
 
@@ -45,6 +57,5 @@ The imagebuilder framework currently supports more than 30 different systems (wh
 For communication github discussions or github issues of this repo should be used. Before creating a new one, please check if there is already another one regarding the topic or problem existing. When creating a new one it is very important to always include all the basic information required, like which hardware is used, which image is used. In case of problems: how exactly do they manifest (instead of just "does not work") and in which context do they appear. With all this, please keep in mind that this is not a product, but a spare time project done and supported by volunteers - so it might take time until there is a solution, answer or suggestion or there might be even none. there is one special category of issues so far which is dealing with the state of certain systems and they have subjects like "chromebook_trogdor: status: coachz" - so it might be a good idea to search the github issues for such "status" information for a certain system.
 
 Finally some notes about the name: the framework did not have any real name so far besides "imagebuilder", but as this is hard to find and not so easy to reference I have decided to give it some name, so it can be referenced easier than as "images built with the hexdump0815 imagebuilder framework" - lets call it "velvet os" from now on. The name comes from the fact, that I sometimes use self-adhesive velvet to cover the (sometimes heavily scratched) top of my chromebooks, which has the nice side effect to let all the marketing branding of the device disappear, making it a perfect velvet os device ...Let's hope that using velvet os images one day will be an as pleasant experience as touching velvet :)
-
 
 **<mdonly>Documentation also available at https://velvet-os.github.io/</mdonly>**
