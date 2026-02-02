@@ -28,19 +28,19 @@ find / -name *.img.gz 2> /dev/null
 
 _Note. ```2> /dev/null``` is for avoiding throwing useless errors and can be removed._
 
-Then, cd to the directory
+Then, cd to the directory:
 
 ```
 cd path/to/dir
 ```
 
-Unpack the image
+Unpack the image:
 
 ```
 gunzip name.img.gz
 ```
 
-Find your USB device
+Find your USB device:
 
 ```
 lsblk
@@ -65,7 +65,7 @@ _Note. You can also run the command before and after plugging in the device to b
 
 _Note. Your partitions might be different._
 
-Flash the image
+Flash the image:
 
 ```
 sudo dd status=progress if=name.img of=/dev/<target-device>
@@ -80,10 +80,10 @@ _Note. if there is any problem with any command just add sudo before it_
 
 ## Flashing on any other system
 
-For simplicity just use [Raspberry Pi imager](https://www.raspberrypi.com/software/), or [Balena Etcher](https://etcher.balena.io/) if for some reason Raspberry Pi imager doesn't work.
+For simplicity just use [Raspberry Pi imager](https://www.raspberrypi.com/software)
 
 ![rpi-imager](./assets/rpi-imager.png)
 
-If you use different software you are on your own, it should work but **do not create and issue about it not working**
+If you use different software you are on your own, it should work but **do not create an issue about it not working.**
 
 _Note. For most you will need to unpack name.img.gz file using archive tool._
