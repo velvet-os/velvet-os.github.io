@@ -5,9 +5,9 @@
 {system codename}/{device codename}.md (base it on other device doc)
 
 - {system codename}/assets/{device codename}.jpg (image of device) (optional)
-Should be no bigger than 200kb.
-No stock images, this might give copyright trouble.
-Only self created images which will be free to be used in the doc repo.
+  Should be no bigger than 200kb.
+  No stock images, this might give copyright trouble.
+  Only self created images which will be free to be used in the doc repo.
 
 2. Add entry to:
 
@@ -19,7 +19,7 @@ and
 
 readme.md
 
-### you can also update existing doc
+### You can also update existing documentation
 
 ## Additional notes
 
@@ -34,6 +34,7 @@ What should be tested :
 _Note. If not present on the device, it should be omitted._
 
 Basic:
+
 - Internal storage:
   - (working) Able to write to internal storage.
   - (broken) Unable to get working.
@@ -42,14 +43,15 @@ Basic:
   - (broken) Unable to get working.
 - Screen:
   - (working) Screen works correctly out of the box.
-  - (partial) Builtin display causes issues.
+  - (partial) Built-in display causes issues.
   - (broken) Unable to get working.
 
 Peripheria:
+
 - Touchscreen or Stylus:
   - (working) Touchscreen works correctly out of the box.
   - (partial) Requires tinkering to get working.
-    - Need orientation adjustments.
+    - Needs orientation adjustments.
   - (broken) Unable to get working.
 - Keyboard:
   - (working) Keyboard works correctly out of the box.
@@ -60,13 +62,14 @@ Peripheria:
     - Needs pressure sensitivity adjustments.
   - (broken) Unable to get working.
 - Camera:
-  - (working) Builtin camera works.
+  - (working) Built-in camera works.
   - (broken) Unable to get working.
 - Gyroscope:
   - (working) Gyroscope works.
   - (broken) Unable to get working.
 
 Audio:
+
 - Speaker:
   - (working) Builtin speaker works.
     - Random high pitch noise(s) should be noted, but it doesn't make it partial.
@@ -75,7 +78,7 @@ Audio:
     - Requires tinkering to get fully working.
   - (broken) Unable to get working.
 - Headphones:
-_Note. Only for devices with headphone/headset jack, USB headphones don't count._
+  _Note. Only for devices with headphone/headset jack, USB headphones don't count._
   - (working) Plugging in headphones works.
     - Lack of jack detection doesn't make it partial.
   - (partial) Plugging in headphones causes some issues.
@@ -83,6 +86,7 @@ _Note. Only for devices with headphone/headset jack, USB headphones don't count.
   - (broken) Unable to get working.
 
 Connectivity:
+
 - WiFi:
   - (working) Works with all WiFi standards device supports.
   - (partial) Works with some standards device supports or causes other issues.
@@ -97,6 +101,7 @@ Connectivity:
   - (broken) Unable to get working.
 
 Connectors:
+
 - USB or USB-C:
   - (working) Works with all/most USB devices
     - Issue with niche devices (notably suzyq cable and DVD players) can/should be noted.
@@ -117,7 +122,8 @@ Connectors:
   - (broken) Unable to get working.
 
 Other:
-- Hardware encoding or Hardware decoding
+
+- Hardware encoding or Hardware decoding:
   - (working) Works by default in web browser/media player.
   - (partial) Needs tinkering to get working.
   - (broken) Unable to get working.
