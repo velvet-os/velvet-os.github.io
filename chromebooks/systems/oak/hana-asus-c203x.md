@@ -1,4 +1,4 @@
-# Lenovo 300e gen2 Mediatek (hana)
+# ASUS C203x (hana)
 
 Kernel Version: 6.1.51-stb-mt7+
 
@@ -9,7 +9,7 @@ Basic
 + Internal storage
 + Battery
 + Screen
-Peripheria
+Peripherials
 + Keyboard
 + Touchpad
 + Camera
