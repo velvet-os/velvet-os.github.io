@@ -6,6 +6,10 @@ _Q. How do i boot the image?_
 
 A. Check out [here](./first-steps.md)
 
+_Q. Can i restore chrome os on my device after installation?_
+
+A. Yes! You can do that very easily using chrome os recovery image you can get from https://cros.tech/ or any other source.
+
 _Q. How do i install the image onto chromebook / There is no installer_
 
 A. [look here](./chromebooks/readme.md) (at the bottom), *Make sure to read everything*
