@@ -5,7 +5,7 @@
 - Banana PI M1 and Allwinner H3 boxes: [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/allwinner_h3/readme.md)
 - Allwinner H6 devices & boxes: [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/allwinner_h6/readme.md)
 - Allwinner H616 devices & boxes: [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/allwinner_h616/readme.md) (wip)
-- Amlogic GX (gxbb=s905, gxl=s905x/s905w, gxm=s912, g12a=s905x2, g12b=s922x and sm1=s905x3) devices & boxes: #TODO: Decipher what this is supposed to mean. [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/amlogic_gx/readme.md)
+- Amlogic GX (gxbb=s905, gxl=s905x/s905w, gxm=s912, g12a=s905x2, g12b=s922x and sm1=s905x3) devices & boxes: [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/amlogic_gx/readme.md)
 - Amlogic M8 (s802, s805 and s812) devices & boxes: [Here](https://github.com/velvet-os/imagebuilder/blob/main/systems/amlogic_m8/readme.md)
 
 ## Chromebooks (ARM):
