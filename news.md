@@ -1,5 +1,73 @@
 # status updates and news around this project
 
+## april 2026
+
+lets give a little update of what was going on around velvet-os in the last
+months (actually nearly the last year) and what is planned for the next months:
+
+- the velvet-os autumn release 2025 came out a few months ago:
+  https://github.com/velvet-os/imagebuilder/discussions/400
+- some testing of the now latest lts kernel v6.18 has been started, but there
+  are still quite a few regressions:
+https://github.com/velvet-os/imagebuilder/discussions/405 - more testers,
+problem resolving and feedback is very welcome here ...
+- the official support for the v6.12 mainline kernel used as a base by most of
+  the images of the latest release has been extended until the end of 2028, so
+it should be possible to update it for quite a while if needed - also v6.12 is
+still quite a good kernel and there are no ground breaking advantages of the
+latest v6.18 lts kernel over it that i'm aware of - linux kernel support
+schedule: https://www.kernel.org/category/releases.html
+- some ideas for the next steps are out already as well:
+  https://github.com/velvet-os/imagebuilder/discussions/393 - as we are already
+in spring the next will maybe be more likely a summer or autumn release ...
+- some preparations for the next round of images have already been done in the
+  tree: sound of the default xfce environment will move from pulseaudio to the
+newer pipewire and ipv6 will no longer be disabled by default in the images
+- some things are on their way for the kernels too like proper support for usb
+  2fa devices and the aarch64 chromebook kernels will bring their own cmdline
+to be used by the velvet-tools in the future
+- some hard to maintain and not very popular systems have been moved to the
+  archive, mostly old 32bit armv7l and more exotic systems
+- the velvet-os imagebuilder repo has hit the 400 star mark on github :)
+
+all in all velvet-os is moving along very slow but still quite healthy i would
+say. i assume that hundreds or more likely thousands of people from all over
+the world are using velvet-os (mostly on chromebooks i guess) and it seems like
+most people are getting it running to some useful degree on their systems.
+questions and problems coming up in the github issues and discussions can in
+many cases be answered and resolved - not always immediately, but still within
+a useable timeframe. all in all i would say not that bad for a completely
+voluntary and spare time driven project.
+
+on my side sadly time is still quite limited, but from time to time there is a
+bit of it when i can continue working on some of the topics i have in mind.
+contributions of others are very welcome: be it in testing kernels or images,
+creating pull requests with fixes, improvments or additional documentation or
+simply by giving feedback what works and what not on certain systems. please be
+careful when using llms/ai when contributing: i would say its completely fine
+to use it to learn and understand things or get inspiration about how to solve
+some problem, but if it results in more effort for us to review a pull request
+than for you to create it this way then we might also deny to pull it in.
+
+my plans for the next time would be to further improve the support for 64bit
+aarch64 arm chromebooks, especially the widely available ones like kukui,
+trogdor, corsola and oak - but also for the others. for 32bit armv7l arm
+chromebooks it will be more to keep them working well - do not expect bigger
+changes there. also some continued solid basic support for x86 chromebooks via
+the chromebook_x86_uefi system is planned. areas to improve would be for
+instance the sound config, touchscreen config, gpu support and similar topics.
+if i find some time i would also like to improve the rockchip, allwinner and
+amlogic sbc and tv box support where possible with acceptable effort (newer
+allwinner h616/h618 kernel, better rockchip rk35xx support, etc.) as in the
+current times of memory shortage they might be good alternatives to the
+raspberry pis getting crazily expensive.
+
+let me finish with a big thank you to all who have crontributed, helped or
+given useful feeback with a special mention of @thenameisluk who is helping a
+lot by taking care of the velvet-os documentation and the velvet-tools plus by
+helping a lot with answering questions and helping to resolve problems in the
+issues and discussions.
+
 ## may 2025
 
 time for another little update of what was going on around velvet-os in the
