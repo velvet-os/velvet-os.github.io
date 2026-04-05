@@ -2,7 +2,7 @@
 
 # Lenovo chromebook slim 3 (magneton)
 
-Kernel Version: 6.12.36-stb-cbm+
+Kernel Version: 6.12.50-stb-cbm+
 
 ### Features table
 ```diff
@@ -27,7 +27,7 @@ Connectors
 Other
 ? Hardware encoding
 ? Hardware decoding
-+ 3D acceleration (Panfrost OpenGL ES 3.1/OpenGL 3.1)
++ 3D acceleration (Panfrost OpenGL ES 3.1/OpenGL 3.1/Vulkan 1.0)
 ```
 
 ### Notes
@@ -44,6 +44,14 @@ adding
 echo 65535 > /sys/kernel/debug/cros_ec/suspend_timeout_ms
 ```
 to ```/etc/rc.local``` seams to fix the issue
+
+**Vulkan**
+requires setting environement variable
+
+```
+PAN_I_WANT_A_BROKEN_VULKAN_DRIVER=true
+```
+driver is not fully conformant yet
 
 # Other
 
