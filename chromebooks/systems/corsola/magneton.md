@@ -1,8 +1,8 @@
-![homestar](./assets/magneton.jpg)
+![magneton](./assets/magneton.jpg)
 
-# Lenovo 10e (kodama)
+# Lenovo chromebook slim 3 (magneton)
 
-Kernel Version: 6.10.0-next-20240725-cos-mt9+
+Kernel Version: 6.12.50-stb-cbm+
 
 ### Features table
 ```diff
@@ -14,35 +14,44 @@ Peripheria
 + Keyboard
 + Camera
 Audio
-- Speaker
-- Headphones
++ Speaker
++ Headphones
 Connectivity
 + Wifi
-! Bluetooth
++ Bluetooth
 Connectors
 + USB
 + USB-C
-- USB-C to HDMI/DP
++ USB-C to HDMI/DP
 + SD Reader
 Other
 ? Hardware encoding
 ? Hardware decoding
-+ 3D acceleration (Panfrost OpenGL ES 3.1/OpenGL 3.1)
++ 3D acceleration (Panfrost OpenGL ES 3.1/OpenGL 3.1/Vulkan 1.0)
 ```
 
 ### Notes
 
 **Bluetooth**
-doesn't work with input device (tested with mouse)
-headphones are ok
+seams to work in the current kernel
 
 **Audio**
-there is no ucm
-trying to enable it might result in burning speakers
+seams to work on the current kernel
 
 **Suspense**
-after going into suspense it won't come back
-hard restart required
+adding
+```
+echo 65535 > /sys/kernel/debug/cros_ec/suspend_timeout_ms
+```
+to ```/etc/rc.local``` seams to fix the issue
+
+**Vulkan**
+requires setting environement variable
+
+```
+PAN_I_WANT_A_BROKEN_VULKAN_DRIVER=true
+```
+driver is not fully conformant yet
 
 # Other
 
