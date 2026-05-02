@@ -21,7 +21,28 @@ in /boot/dtb-5.19.1-stb-exy+ and the kernel modules and some tools in
 there if any kind of patches got applied relative to the clean original linux
 mainline kernel tree).
 
-It is always recommended and in case of a luks encryted root filesystem even
+For simplicity of installation, install [velvet-tools](https://github.com/velvet-os/velvet-tools) (if not already installed):
+```
+sudo apt install velvet-tools
+```
+Now build the unarchived kernel with
+
+```
+sudo vtbuild 5.19.1-stb-exy+
+```
+
+Now, run the following to test the kernel so that the new kernel is **temporarily loaded** after reboot.
+```
+sudo vttest 5.19.1-stb-exy+
+```
+Now **reboot**. Verify that the system functions properly. If you are happy with the new kernel,
+**permanently flash it** with
+```
+sudo vtflash 5.19.1-stb-exy+
+```
+**Reboot**.
+
+In case of a luks encryted root filesystem even
 reqired to rebuild the corresponding initramfs after installing a new kernel
 via the following command:
 ```
@@ -30,6 +51,11 @@ initramfs-update -c -k 5.19.1-sty-exy+
 
 If the kernel is the result of an own kernel build then everything should
 already be in place.
+
+
+
+**The following section is kept for historical purpose. 
+For modern ARM64 Chromebooks running Debian bookworm or Trixie, read the section above.**
 
 ## How to activate/use the new kernel
 
