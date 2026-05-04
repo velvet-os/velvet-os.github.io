@@ -134,4 +134,4 @@ is possible to run "make menuconfig" before the kernel build make (the "make
 
 ## what to do with the freshly built kernel to test and use it?
 
-this is described in the file "installing-a-newer-kernel.md"
+this is described in the file [installing-a-newer-kernel.md](./installing-a-newer-kernel.md)
