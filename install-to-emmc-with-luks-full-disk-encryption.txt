@@ -43,6 +43,9 @@ partprobe /dev/mmcblk0
 cgpt create /dev/mmcblk0
 partprobe /dev/mmcblk0
 # the next two commands should work for all chromebooks except veyron - see below for those
+cgpt add -i 1 -t kernel -b 8192 -s 262144 -l KernelA -S 1 -T 2 -P 10 /dev/mmcblk0
+cgpt add -i 2 -t kernel -b 270336 -s 262144 -l KernelB -S 0 -T 2 -P 5 /dev/mmcblk0
+# for some older chromebooks which do not support larger boot images smaller partitions can be used
 cgpt add -i 1 -t kernel -b 8192 -s 65536 -l KernelA -S 1 -T 2 -P 10 /dev/mmcblk0
 cgpt add -i 2 -t kernel -b 73728 -s 65536 -l KernelB -S 0 -T 2 -P 5 /dev/mmcblk0
 # for veyron (= rk3288 based) chromebooks the following commands have to be used instead
@@ -139,8 +142,8 @@ Device     Boot   Start      End  Sectors  Size Id Type
 # a btrfs fs on it (ext4 example below) - partition numbers based on the chromebook
 # example from above - might need to be adjusted
 mkfs -t ext4 -O ^has_journal -m 0 -L bootemmc /dev/mmcblk0p3
-cryptsetup luksFormat /dev/mmcblk0p4
-cryptsetup open --type luks /dev/mmcblk0p4 encrypted
+cryptsetup luksFormat --type luks2 /dev/mmcblk0p4
+cryptsetup open --type luks2 /dev/mmcblk0p4 encrypted
 mkfs -t btrfs -m single -L rootemmc /dev/mapper/encrypted 
 mount -o ssd,compress-force=zstd,noatime,nodiratime /dev/mapper/encrypted /mnt
 # ext4 case without journal (to reduce writes to emmc etc.)
@@ -167,11 +170,12 @@ rsync -axADHSX --no-inc-recursive --delete --exclude='/swap/*' / /mnt
 # tar --numeric-owner -xzf some-tar-archive.tar.gz
 
 # create swap files or file - the brtfs cmds will give an error in the ext4
-# case, but this should be no problem
+# case and some of them also for newer btrfs versions, but this should be no problem
 rm -rf /mnt/swap
 btrfs subvolume create /mnt/swap
 chmod 755 /mnt/swap
 chattr -R +C /mnt/swap
+# this will give an error on newer btrfs versions which can be ignored, the same is true again below
 btrfs property set /mnt/swap compression none
 cd /mnt/swap
 # see https://blog.passcod.name/2020/jun/16/full-disk-encryption-with-btrfs-swap-and-hibernation
@@ -213,6 +217,7 @@ chroot /mnt
 # enable xz compression for initrd - saves space in /boot and makes initrd smaller
 # for fit image in case that is needed - memlimit might need adjustment in case
 # update-initramfs gives an error
+# this is already the default in any recent images, so no change will be required for those
 # create /etc/initramfs-tools/conf.d/compress:
 vi /etc/initramfs-tools/conf.d/compress
 # content of the file:
@@ -334,6 +339,19 @@ vi /boot/extlinux/extlinux.conf
 
 
 # generic section required for all systems
+
+# remove the generated ssh keys so that fresh ones are generated on
+# first boot for each installed image
+rm -f /etc/ssh/*key*
+# activate the one shot service to recreate them on first boot
+mkdir -p /etc/systemd/system/multi-user.target.wants
+( cd /etc/systemd/system/multi-user.target.wants ;  ln -s ../regenerate-ssh-host-keys.service . )
+
+# delete random-seed and machine-id according to https://systemd.io/BUILDING_IMAGES/
+# so that they get created unique per machine on first boot
+# inspired by: https://github.com/armbian/build/pull/3774
+echo "uninitialized" > /etc/machine-id
+rm -f /var/lib/systemd/random-seed /var/lib/dbus/machine-id
 
 # exit chroot
 exit
