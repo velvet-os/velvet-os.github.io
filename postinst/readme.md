@@ -23,6 +23,8 @@ now that you are done with installation there are some additional things you wan
 - Getting wacom tablets to work - [need to draw something on my tablet](./wacom-tablet-setup.md)
 
 - Installing kernel headers - [i need to compile some stuff with them](./installing-kernel-headers.md)
+  
+- Installing WPILib sdk for robotics - [need to write, deploy, and simulate robot code](./getting-frc-wpilib-to-work.md)
 
 ### Tweaking software
 
