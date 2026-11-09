@@ -98,7 +98,8 @@ partprobe /dev/$disk
 ```
 cgpt create /dev/$disk
 ```
-6. Create the two kernel partitions
+6. Create the two kernel partitions for snow, peach, nyan, gru and oak
+   chromebooks (for the other aarch64 chromebooks see below)
 ```
 cgpt add -i 1 -t kernel -b 8192 -s 65536 -l KernelA -S 1 -T 2 -P 10 /dev/$disk
 cgpt add -i 2 -t kernel -b 73728 -s 65536 -l KernelB -S 0 -T 2 -P 5 /dev/$disk
@@ -109,6 +110,13 @@ cgpt add -i 1 -t kernel -b 73728 -s 32768 -l KernelA -S 1 -T 2 -P 10 /dev/$disk
 cgpt repair /dev/$disk
 cgpt add -i 2 -t kernel -b 106496 -s 32768 -l KernelB -S 0 -T 2 -P 5 /dev/$disk
 cgpt repair /dev/$disk
+```
+For the remaining aarch64 chromebooks which can boot larger kernel files, i.e.
+kukui, trogdor, corsola, asurada, cherry, geralt, rauru and skywalker please
+use the following commands
+```
+cgpt add -i 1 -t kernel -b 8192 -s 262144 -l KernelA -S 1 -T 2 -P 10 /dev/$disk
+cgpt add -i 2 -t kernel -b 270336 -s 262144 -l KernelB -S 0 -T 2 -P 5 /dev/$disk
 ```
 
 7. Create remaining partitions
